@@ -26,4 +26,5 @@ jobs:
             \"files\": \"${FILES}\",
             \"commit\": \"${{ github.sha }}\",
             \"repo\": \"${{ github.repository }}\"
+            "file": "employee.xml"
           }"
