@@ -22,9 +22,6 @@ jobs:
           curl -X POST http://182.48.194.218:8181/auth/github/actionPayload \
           -H "Content-Type: application/json" \
           -d "{
-            \"event\": \"file_changed\",
-            \"files\": \"${FILES}\",
-            \"commit\": \"${{ github.sha }}\",
-            \"repo\": \"${{ github.repository }}\"
+           "event": "file_changed",
             "file": "employee.xml"
           }"
