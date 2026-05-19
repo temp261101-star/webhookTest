@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Call Backend API
         run: |
-          curl -v -X POST http://182.48.194.218:8181/auth/github/actionPayload \
+          curl -X POST http://182.48.194.218:8181/auth/github/actionPayload \
           -H "Content-Type: application/json" \
           -H "Authorization: Bearer ${{ secrets.API_SECRET }}" \
           -d '{
