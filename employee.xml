@@ -18,6 +18,9 @@
         
         <property name="salary" column="salary" type="double"/>
 
+        <property name="designation" column="designation" type="string"/>
+
+
     </class>
 
 </hibernate-mapping>
