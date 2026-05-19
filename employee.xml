@@ -16,7 +16,13 @@
         
         <property name="email" column="email" type="string"/>
         
+        
+        <property name="designation" column="designation" type="string"/>
+
         <property name="dept" column="dept" type="string"/>
+
+        <property name="address" column="address" type="string"/>
+
 
     </class>
 
