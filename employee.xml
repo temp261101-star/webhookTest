@@ -14,7 +14,7 @@
 
         <property name="name" column="name" type="string"/>
         
-        <property name="email" column="email" type="string"/>
+        <property name="emailaddress" column="emailaddress" type="string"/>
         
         
         <property name="designation" column="designation" type="string"/>
