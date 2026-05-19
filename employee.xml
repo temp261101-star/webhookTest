@@ -18,7 +18,6 @@
         
         <property name="designation" column="designation" type="string"/>
 
-        <property name="dept" column="dept" type="string"/>
 
     </class>
 
