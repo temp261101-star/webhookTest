@@ -17,7 +17,6 @@
         <property name="email" column="email" type="string"/>
         
         <property name="salary" column="salary" type="double"/>
-        <property name="salary1" column="salary1" type="double"/>
 
         <property name="designation" column="designation" type="string"/>
         <property name="designation11" column="designation11" type="string"/>
