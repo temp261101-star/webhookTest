@@ -3,7 +3,8 @@ name: Custom Hook
 on:
   push:
     paths:
-      - 'index2.html'   
+      - 'index2.html' 
+      - 'employee.xml'
 
 jobs:
   notify-backend:
@@ -12,7 +13,7 @@ jobs:
     steps:
       - name: Call Backend API
         run: |
-          curl -X POST http://182.48.194.218:8181/auth/github/demo \
+          curl -X POST http://182.48.194.218:8181/auth/github/actionPayload \
           -H "Content-Type: application/json" \
           -d '{
             "event": "file_changed",
