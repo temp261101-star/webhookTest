@@ -3,7 +3,8 @@ name: Custom Hook
 on:
   push:
     paths:
-      - 'index2.html'   
+      - 'index2.html' 
+      - 'employee.xml'
 
 jobs:
   notify-backend:
