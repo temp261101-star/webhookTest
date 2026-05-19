@@ -16,7 +16,6 @@
         
         <property name="email" column="email" type="string"/>
         
-        <property name="designation" column="designation" type="string"/>
 
 
     </class>
