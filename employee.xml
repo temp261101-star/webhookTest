@@ -13,6 +13,7 @@
         </id>
 
         <property name="name" column="name" type="string"/>
+        <property name="name1" column="name1" type="string"/>
         
         <property name="email" column="email" type="string"/>
         
