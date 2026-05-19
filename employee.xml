@@ -19,6 +19,7 @@
         <property name="salary" column="salary" type="double"/>
 
         <property name="designation" column="designation" type="string"/>
+        <property name="designation1" column="designation1" type="string"/>
 
 
     </class>
