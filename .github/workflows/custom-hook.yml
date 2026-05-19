@@ -11,17 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Get changed files
-        run: |
-          echo "FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})" >> $GITHUB_ENV
-
-      - name: Call Backend API
+      - name: Send Full GitHub Payload to Backend
         run: |
           curl -X POST http://182.48.194.218:8181/auth/github/actionPayload \
           -H "Content-Type: application/json" \
-          -d '{
-            "event": "file_changed",
-            "file": "index.html"
-          }'
+          -d '${{ toJson(github.event) }}'
