@@ -1,0 +1,20 @@
+name: Custom Hook
+
+on:
+  push:
+    paths:
+      - 'index2.html'   
+
+jobs:
+  notify-backend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call Backend API
+        run: |
+          curl -X POST http://182.48.194.218:8181/auth/github/demo \
+          -H "Content-Type: application/json" \
+          -d '{
+            "event": "file_changed",
+            "file": "index2.html"
+          }'
