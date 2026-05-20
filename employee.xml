@@ -13,7 +13,8 @@
         </id>
 
         <property name="name" column="name" type="string"/>
-        
+        <property name="salary" column="name" type="string"/>
+
         
         
         <property name="designation" column="designation" type="string"/>
