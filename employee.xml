@@ -22,7 +22,6 @@
         <property name="dept" column="dept" type="string"/>
 
         <property name="address" column="address" type="string"/>
-        <property name="add" column="add" type="string"/>
 
 
     </class>
